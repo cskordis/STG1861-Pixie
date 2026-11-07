@@ -1,43 +1,37 @@
-# Bill of Materials (BOM)
+# Bill of Materials (BOM) Template
 
-This file is a starting BOM template for the STG-AVI1861 compact board.
+Use this template for a specific, released schematic and PCB revision. The entries below are placeholders—not verified component values or a complete parts list.
 
-## General notes
+## Design identification
 
-- Confirm all values against the final schematic before PCB fabrication or assembly.
-- Verify footprint compatibility for each part, especially for compact through-hole layouts.
-- Prefer leaded components where hand assembly is expected.
+| Field | Value |
+| --- | --- |
+| Project | STG-AVI1861 |
+| Schematic revision | TBD |
+| PCB revision | TBD |
+| BOM revision / date | TBD |
 
-## Passive components
+## Components
 
-| Reference | Description | Value | Qty | Notes |
-| --- | --- | --- | --- | --- |
-| R1, R2, ... | Resistor | TBD | TBD | Confirm exact values from schematic |
-| C1, C2, ... | Capacitor | TBD | TBD | Film, electrolytic, or ceramic as required |
-| D1, D2, ... | Diode | TBD | TBD | Check polarity and package |
+| Reference(s) | Qty | Value / part number | Description | Footprint / package | Notes / source |
+| --- | ---: | --- | --- | --- | --- |
+| TBD | TBD | TBD | Resistor | TBD | Confirm value and lead spacing from released design |
+| TBD | TBD | TBD | Capacitor | TBD | Confirm dielectric, voltage rating, polarity, and lead spacing as applicable |
+| TBD | TBD | TBD | Semiconductor | TBD | Confirm exact device, pinout, and package |
+| TBD | TBD | TBD | Connector / control | TBD | Confirm mounting style and panel/enclosure compatibility |
+| TBD | TBD | TBD | Hardware | TBD | Include only if required by the released design |
 
-## Semiconductors
+## Assembly notes
 
-| Reference | Description | Value / Type | Qty | Notes |
-| --- | --- | --- | --- | --- |
-| Q1, Q2, ... | Transistor | TBD | TBD | Verify type and pinout |
-| IC1 | Integrated circuit | TBD | TBD | Only if used in final design |
+- Replace every `TBD` with information verified against the matching schematic and PCB revision.
+- Ensure reference designators, quantities, values, and footprints agree across the design files.
+- Identify polarity-sensitive parts and any parts with nonstandard pinouts.
+- Record manufacturer part numbers or acceptable alternatives where component choice matters.
+- Note substitutions and their approval; do not silently change electrical ratings or pinouts.
+- Add sourcing and availability notes without treating a retailer listing as the design specification.
 
-## Connectors and hardware
+## Change history
 
-| Reference | Description | Value | Qty | Notes |
-| --- | --- | --- | --- | --- |
-| J1 | Power connector | TBD | 1 | Confirm polarity and type |
-| J2 | Input / output jack | TBD | TBD | Use board-mount or panel-mount as required |
-| H1-HN | Hardware | TBD | TBD | Standoffs, screws, washers |
-
-## Recommended BOM process
-
-1. Enter the final design references from the schematic.
-2. Add exact values, package types, and part numbers.
-3. Include sourcing notes for non-standard or hard-to-find parts.
-4. Add a revision or date whenever the BOM changes.
-
-## Placeholder
-
-This BOM is intentionally a template until the final schematic and PCB revision are committed to the repository.
+| BOM revision | Date | Change | Author |
+| --- | --- | --- | --- |
+| TBD | TBD | Initial release / template update | TBD |

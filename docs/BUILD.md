@@ -1,39 +1,51 @@
-# Build Notes
+# Build and Verification Checklist
 
-This document captures the practical notes for assembling the STG-AVI1861 compact Pixie variant.
+This checklist is a general workflow for the STG-AVI1861. Follow the released schematic, PCB revision, and component documentation for all electrical details; this document does not specify circuit values, supply requirements, or expected test voltages.
 
-## Assembly goals
+## Before assembly
 
-- Use through-hole components only
-- Keep the footprint smaller than the original STG1861 Pixie board
-- Prioritize hand assembly and serviceability
-- Preserve the original circuit intent while adapting the layout
+- [ ] Confirm the schematic, PCB, and BOM revisions match.
+- [ ] Review the released design files and applicable build notes.
+- [ ] Check that all parts match the BOM, including package, pinout, polarity, and ratings.
+- [ ] Inspect the bare PCB for damage, shorts, missing pads, or manufacturing defects.
+- [ ] Confirm the board fits the intended enclosure and that connector/control clearances are adequate.
+- [ ] Gather appropriate soldering, ESD, and eye-protection equipment.
 
-## Recommended workflow
+## Assembly
 
-1. Verify the schematic against the original STG1861 design and the compact footprint changes.
-2. Print the PCB layout at full size and confirm component spacing before drilling or ordering boards.
-3. Start with the lowest-profile / smallest-pitch components first.
-4. Install all resistors, capacitors, and diodes before soldering larger parts.
-5. Test each stage before final enclosure installation.
-6. Check for mechanical clearance in the chosen enclosure or panel layout.
+- [ ] Install components according to the assembly drawing or PCB silkscreen.
+- [ ] Observe polarity and pin-1 markings for polarized or orientation-sensitive parts.
+- [ ] Check component orientation and placement before soldering each group.
+- [ ] Inspect solder joints for bridges, poor wetting, and unsoldered connections.
+- [ ] Clean the board only using a method suitable for the components and PCB materials.
 
-## Layout considerations
+## Unpowered inspection
 
-- Maintain generous spacing around high-impedance analog nodes.
-- Keep grounding paths short and consistent.
-- Separate audio signal routing from power supply routing where practical.
-- Leave clearance for hand-soldering and future modification.
+- [ ] Compare the populated board against the assembly drawing and BOM.
+- [ ] Check for solder bridges, misplaced parts, clipped leads, and debris.
+- [ ] Use the schematic to check for unintended shorts between power and ground; account for normal circuit paths when interpreting continuity readings.
+- [ ] Verify connector wiring and polarity against the released design documentation.
 
-## Testing checklist
+## Power-up and functional verification
 
-- Continuity and short checks before power-up
-- Confirm correct power polarity and supply rails
-- Measure DC bias points at key circuit nodes
-- Check for unwanted oscillation or instability
-- Listen for audible noise, hum, or clipping issues
-- Verify the enclosure fit with the assembled board
+- [ ] Use only the supply type, polarity, and operating conditions specified by the released design.
+- [ ] If the design documentation provides a staged or current-limited bring-up procedure, follow it.
+- [ ] Measure only the documented test points and compare results with the documented expected values.
+- [ ] Verify inputs, outputs, controls, and other functions using the design's test procedure.
+- [ ] Record any deviations, symptoms, measurements, and the hardware revision tested.
 
-## Notes
+## Before enclosure installation
 
-This document is intentionally lightweight and is intended to be updated as the board design evolves.
+- [ ] Confirm mechanical fit without stressing the PCB or component leads.
+- [ ] Ensure no exposed conductors can contact the enclosure or other hardware unintentionally.
+- [ ] Recheck wiring and operation after installation.
+
+## Build record
+
+| Field | Value |
+| --- | --- |
+| Assembled by / date | TBD |
+| PCB revision | TBD |
+| BOM revision | TBD |
+| Test procedure / revision | TBD |
+| Results and notes | TBD |
