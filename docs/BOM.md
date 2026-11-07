@@ -1,6 +1,6 @@
-# Bill of Materials (BOM) Template
+# Bill of Materials (BOM)
 
-Use this template for a specific, released schematic and PCB revision. The entries below are placeholders—not verified component values or a complete parts list.
+This BOM is based on the released STG-1861 Pixie design revision 1.0c and the corresponding assembly CSV. Values below are verified against the provided schematic/component inventory and are intended for the released design revision only.
 
 ## Design identification
 
@@ -15,23 +15,23 @@ Use this template for a specific, released schematic and PCB revision. The entri
 
 | Reference(s) | Qty | Value / part number | Description | Footprint / package | Notes / source |
 | --- | ---: | --- | --- | --- | --- |
-| TBD | TBD | TBD | Resistor | TBD | Confirm value and lead spacing from released design |
-| TBD | TBD | TBD | Capacitor | TBD | Confirm dielectric, voltage rating, polarity, and lead spacing as applicable |
-| TBD | TBD | TBD | Semiconductor | TBD | Confirm exact device, pinout, and package |
-| TBD | TBD | TBD | Connector / control | TBD | Confirm mounting style and panel/enclosure compatibility |
-| TBD | TBD | TBD | Hardware | TBD | Include only if required by the released design |
+| C1, C2, C3, C4 | 4 | 100 nF | Capacitor, ceramic | Capacitor_THT:C_Rect_L4.0mm_W2.5mm_P2.50mm | 4x capacitors; verify voltage rating and dielectric against the schematic if required by the assembled design |
+| D5, D6 | 2 | 1N914 | Diode, switching | Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal | Datasheet: Vishay 1N914; confirm orientation and use in circuit |
+| U1, U2 | 2 | ATF22C10 | IC, programmable logic | Package_DIP:DIP-24_W7.62mm | Confirm exact part revision / source and pinout against the design netlist |
+| U3 | 1 | 74HC165 | IC, 8-bit parallel-in/serial-out shift register | Package_DIP:DIP-16_W7.62mm | Nexperia 74HC165 datasheet: https://assets.nexperia.com/documents/data-sheet/74HC_HCT165.pdf |
+| U4 | 1 | 4040 | IC, 12-stage binary ripple counter | Package_DIP:DIP-16_W7.62mm | Intersil CD4040B family datasheet; confirm pinout and device variant |
+| U5 | 1 | CDP1861 | IC, custom/legacy logic device | Package_DIP:DIP-24_W15.24mm_Socket | Legacy device; confirm exact package/socket compatibility and sourcing |
 
 ## Assembly notes
 
-- Replace every `TBD` with information verified against the matching schematic and PCB revision.
-- Ensure reference designators, quantities, values, and footprints agree across the design files.
-- Identify polarity-sensitive parts and any parts with nonstandard pinouts.
-- Record manufacturer part numbers or acceptable alternatives where component choice matters.
-- Note substitutions and their approval; do not silently change electrical ratings or pinouts.
-- Add sourcing and availability notes without treating a retailer listing as the design specification.
+- Use the reference designators and quantities exactly as listed above for the released 1.0c revision.
+- Verify polarity, orientation, and device variant for all semiconductor parts before assembly.
+- Confirm socketing and package compatibility for U5 (CDP1861) against the PCB and assembly documentation.
+- Record any substitutions, lot-specific variations, or approved alternatives in the design change log.
+- Do not substitute parts without confirming electrical ratings, pinout, and footprint compatibility.
 
 ## Change history
 
 | BOM revision | Date | Change | Author |
 | --- | --- | --- | --- |
-| TBD | TBD | Initial release / template update | TBD |
+| 1.0c | TBD | Initial BOM entry based on STG1861c.csv component inventory | TBD |
