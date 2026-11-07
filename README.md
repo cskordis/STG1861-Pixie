@@ -1,4 +1,4 @@
-# STG-AVI1861
+# STG1861 Pixie
 
 A compact, through-hole adaptation of Bob Armstrong’s **Spare Time Gizmo STG1861 Pixie board**.
 
