@@ -7,5 +7,3 @@
 | `FRAME192.JED` | HEC1802 Mono machine configuration, intended to increase video resolution for ETI-660 Learner's Computer software. Use with `LINE.JED`. |
 
 The files are device programming JEDEC images. Select the image that matches the target hardware and software configuration; verify device compatibility and programming requirements before programming.
-
-> The filename is `FRAME192.JED` (not `FRAM192.JED`).
