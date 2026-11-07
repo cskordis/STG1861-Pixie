@@ -34,4 +34,4 @@ This BOM is based on the released STG-1861 Pixie design revision 1.0c and the co
 
 | BOM revision | Date | Change | Author |
 | --- | --- | --- | --- |
-| 1.0c | TBD | Initial BOM entry based on STG1861c.csv component inventory | TBD |
+| 1.0c | 11/04/2026 | Initial BOM entry based on STG1861c.csv component inventory | TBD |
