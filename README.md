@@ -17,7 +17,7 @@ This project focuses on fitting the design into a smaller footprint while using 
 - [`docs/BOM.md`](docs/BOM.md) — bill-of-materials template
 - [`docs/BUILD.md`](docs/BUILD.md) — assembly and verification checklist
 - [`docs/PROJECT_STRUCTURE.md`](docs/PROJECT_STRUCTURE.md) — proposed organization for project files
-- `Files/` — intended location for schematics, PCB design files, and manufacturing outputs as they are added
+- `[Files/](Files)` — intended location for schematics, PCB design files, and manufacturing outputs as they are added
 
 ## Build information
 
