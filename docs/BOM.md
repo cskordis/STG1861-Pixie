@@ -6,10 +6,10 @@ Use this template for a specific, released schematic and PCB revision. The entri
 
 | Field | Value |
 | --- | --- |
-| Project | STG-AVI1861 |
-| Schematic revision | TBD |
-| PCB revision | TBD |
-| BOM revision / date | TBD |
+| Project | STG-1861 Pixie |
+| Schematic revision | 1.0c |
+| PCB revision | 1.0c |
+| BOM revision / date | 1.0c |
 
 ## Components
 
