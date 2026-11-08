@@ -4,8 +4,6 @@ A compact, through-hole adaptation of Bob Armstrong’s **Spare Time Gizmo STG18
 
 This project focuses on fitting the design into a smaller footprint while using through-hole components. Schematics, PCB files, and component values should be treated as authoritative only when they are present in the repository and identified with a revision.
 
-> **Project status:** Documentation scaffold. Confirm the current design files and revision before ordering a PCB or assembling a board.
-
 ## Project goals
 
 - Adapt the STG1861 Pixie board to a smaller physical footprint.
