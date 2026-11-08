@@ -2,8 +2,8 @@
 
 | JEDEC file | Intended system / use |
 | --- | --- |
-| `LINE.JED` | Line logic used with the 64 × 32 `FRAME.JED` configuration and the HEC1802 Mono machine configuration. |
-| `FRAME.JED` | 64 × 32 video configuration for CHIP-8 and systems such as the COSMAC Elf and RCA Studio II. |
-| `FRAME192.JED` | HEC1802 Mono machine configuration, intended to increase video resolution as 64 x 48 for ETI-660 Learner's Computer software. Use with `LINE.JED`. |
+| `LINE.JED` | Line-logic image for the 64 × 32 `FRAME.JED` configuration on HEC-1802 Color or Mono systems. |
+| `FRAME.JED` | 64 × 32 video configuration for CHIP-8 and systems such as the COSMAC Elf and RCA Studio II. Use with the HEC-1802 ROM. |
+| `FRAME192.JED` | HEC-1802 Color or Mono configuration providing 64 × 48 video for ETI-660 Learner's Computer software. Use with `LINE.JED` and the ETI-660 ROM. |
 
-The files are device programming JEDEC images. Select the image that matches the target hardware and software configuration; verify device compatibility and programming requirements before programming.
+These files are JEDEC images for programming the video logic devices. Choose the image or combination of images that matches your hardware and software configuration, and verify device compatibility and programming requirements before programming.
